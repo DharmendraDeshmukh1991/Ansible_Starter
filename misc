@@ -1,0 +1,19 @@
+Ansible ======= (Powerful automation platform tool)
+ - configuration management tool (CM tool)
+      - provisioning tool (like terraform)
+      - CI/CD deployment
+      - Network automation
+ - Competitors - CHEF, puppet, salt-stack
+ - Agentless, push style, idempotance
+ - Modules written in python 
+ - connectivity (ssh - linux, winrm - windows)
+ - ansible tower - GUI (RBAC - users restriction)
+ - playbooks (collection of plays - tasks) in YAML
+ - managed node should have python
+ - Control node should be LINUX like or it can be windows with WSL installed.
+
+Getting started
+ - Python installed > Install ansible of control node > setup passwordless auth. with managed nodes > create inventory file > configure ansible.cfg
+
+
+
