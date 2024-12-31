@@ -1,19 +1,34 @@
-Ansible ======= (Powerful automation platform tool)
- - configuration management tool (CM tool)
-      - provisioning tool (like terraform)
-      - CI/CD deployment
-      - Network automation
- - Competitors - CHEF, puppet, salt-stack
- - Agentless, push style, idempotance
- - Modules written in python 
- - connectivity (ssh - linux, winrm - windows)
- - ansible tower - GUI (RBAC - users restriction)
- - playbooks (collection of plays - tasks) in YAML
- - managed node should have python
- - Control node should be LINUX like or it can be windows with WSL installed.
-
-Getting started
- - Python installed > Install ansible of control node > setup passwordless auth. with managed nodes > create inventory file > configure ansible.cfg
+Terraform =============
+ - terraform init
+ - terraform validate
+ - terraform plan
+ - terraform apply
+ - terrafrom destroy
 
 
+main.tf file (terraform file should have .tf extension)
+ - provider block (can be a seperate file such as provider.tf file)
+ - resource block (can be a seperate file such as resource.tf file)
+ - variable block (can be a seperate file such as variable.tf file)
+      * how to call variable - var.<variablename>
+ - output block 
+      * prints the created resource details.
+ - backend block
+      * for remote state management
+ - data block (datasource)
+      * to get dynamic data from providers which can be used in your terraform file.
 
+
+terraform.tfstate
+terraform.tfstate.backup
+
+
+random provider use ?
+ - to generate random IDs
+
+
+Type of terraform variables (sorted based on priority - first being the lowest and last being the highest) 
+ - environment variable
+ - terraform.tfvars
+ - *.auto.tfvars
+ - on command line (-var and -var-file)
