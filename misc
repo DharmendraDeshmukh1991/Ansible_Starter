@@ -9,6 +9,7 @@ Terraform =============
 main.tf file (terraform file should have .tf extension)
  - provider block (can be a seperate file such as provider.tf file)
  - resource block (can be a seperate file such as resource.tf file)
+     * depends_on -- create a dependancy, if multiple resources depends on each other
  - variable block (can be a seperate file such as variable.tf file)
       * how to call variable - var.<variablename>
  - output block 
@@ -32,3 +33,37 @@ Type of terraform variables (sorted based on priority - first being the lowest a
  - terraform.tfvars
  - *.auto.tfvars
  - on command line (-var and -var-file)
+
+
+terraform function
+ - in-built functions to achieve certain taaks/values.
+
+terraform count
+ - Its like a loop.
+
+terraform for_each
+
+terraform modules
+ - Its like ansible roles in ansible-galaxy
+ - similler the modules are available on terraform website.
+
+terraform lifecycle
+ - create_before_destroy
+ - prevent_destroy
+ - ignore_chnages
+ - replace_trigger_by
+
+validation (resource specific)
+ - precondition
+ - postcondition
+
+state file manupulation 
+ - command : terraform state list
+ - command : terraform state mv oldname newname
+ - command : terraform state rm <resource>
+
+terraform import 
+
+terraform workspace
+
+terraform cloud (cloud version of terraform - SaaS)
