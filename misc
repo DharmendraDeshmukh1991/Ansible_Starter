@@ -12,7 +12,7 @@ RAID : Redundant array of independent disks
 
 Type of RAID :
 --------------
-RAID 0 (aka Striping)......................... : Array of 2 disks. Data spread accross 2 disks. no fault tolerence, any 1 disk become faulty, the whole data will be corrupt. read will be faster/speed
-RAID 1 (aka mirroring/duplexing)......................... : Array of 2 or more disks. data duplicates on both/all disks. only 50% of storage will be used, provide fault tolerence. 
-RAID 5 (stripping with parity)......................... : Most common - Array of min. 3 disks. data spread/stripped accross all disks (same like RAID 0), but with a PARITY bit. incase of any disk failure, the PARITY helps in rebuilding the data. 75% of capacity can be used. 
-RAID 10 (RAID 0 + RAID 1) (aka ) ...... : Array of min. 4 disks. combine stripping with mirriroing. 50% of capacity can be used.
+RAID 0 (aka Striping).............. : Array of 2 disks. Data spread/strip accross 2 disks. no fault tolerence, any 1 disk become faulty, the whole data will be corrupt. read will be faster/speed
+RAID 1 (aka mirroring/duplexing)... : Array of 2 or more disks. data duplicates on both/all disks. only 50% of storage will be used, provide fault tolerence and speed. 
+RAID 5 (stripping with parity)..... : Most common - Array of min. 3 disks. data spread/stripped accross all disks (same like RAID 0), but with a PARITY bit. incase of any disk failure, the PARITY helps in rebuilding the data. 75% of capacity can be used. 
+RAID 10 (RAID 0 + RAID 1) (aka ) .. : Array of min. 4 disks. combine stripping with mirriroing. 50% of capacity can be used.
