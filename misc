@@ -1,69 +1,18 @@
-Terraform =============
- - terraform init
- - terraform validate
- - terraform plan
- - terraform apply
- - terrafrom destroy
+spinnakar =======================================
+Yes! Spinnaker and Jenkins often complement each other:
+Jenkins can handle builds and testing phases.
+Spinnaker can take over for deployment and post-deployment processes.
 
 
-main.tf file (terraform file should have .tf extension)
- - provider block (can be a seperate file such as provider.tf file)
- - resource block (can be a seperate file such as resource.tf file)
-     * depends_on -- create a dependancy, if multiple resources depends on each other
- - variable block (can be a seperate file such as variable.tf file)
-      * how to call variable - var.<variablename>
- - output block 
-      * prints the created resource details.
- - backend block
-      * for remote state management
- - data block (datasource)
-      * to get dynamic data from providers which can be used in your terraform file.
 
+STORAGE (RAID) ==================================
+https://youtu.be/U-OCdTeZLac?si=8AnZW88kMaOgJE8d
 
-terraform.tfstate
-terraform.tfstate.backup
+RAID : Redundant array of independent disks
 
-
-random provider use ?
- - to generate random IDs
-
-
-Type of terraform variables (sorted based on priority - first being the lowest and last being the highest) 
- - environment variable
- - terraform.tfvars
- - *.auto.tfvars
- - on command line (-var and -var-file)
-
-
-terraform function
- - in-built functions to achieve certain taaks/values.
-
-terraform count
- - Its like a loop.
-
-terraform for_each
-
-terraform modules
- - Its like ansible roles in ansible-galaxy
- - similler the modules are available on terraform website.
-
-terraform lifecycle
- - create_before_destroy
- - prevent_destroy
- - ignore_chnages
- - replace_trigger_by
-
-validation (resource specific)
- - precondition
- - postcondition
-
-state file manupulation 
- - command : terraform state list
- - command : terraform state mv oldname newname
- - command : terraform state rm <resource>
-
-terraform import 
-
-terraform workspace
-
-terraform cloud (cloud version of terraform - SaaS)
+Type of RAID :
+--------------
+RAID 0 (aka Striping)......................... : Array of 2 disks. Data spread accross 2 disks. no fault tolerence, any 1 disk become faulty, the whole data will be corrupt. read will be faster/speed
+RAID 1 (aka mirroring/duplexing)......................... : Array of 2 or more disks. data duplicates on both/all disks. only 50% of storage will be used, provide fault tolerence. 
+RAID 5 (stripping with parity)......................... : Most common - Array of min. 3 disks. data spread/stripped accross all disks (same like RAID 0), but with a PARITY bit. incase of any disk failure, the PARITY helps in rebuilding the data. 75% of capacity can be used. 
+RAID 10 (RAID 0 + RAID 1) (aka ) ...... : Array of min. 4 disks. combine stripping with mirriroing. 50% of capacity can be used.
