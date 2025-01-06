@@ -16,3 +16,15 @@ RAID 0 (aka Striping).............. : Array of 2 disks. Data spread/strip accros
 RAID 1 (aka mirroring/duplexing)... : Array of 2 or more disks. data duplicates on both/all disks. only 50% of storage will be used, provide fault tolerence and speed. 
 RAID 5 (stripping with parity)..... : Most common - Array of min. 3 disks. data spread/stripped accross all disks (same like RAID 0), but with a PARITY bit. incase of any disk failure, the PARITY helps in rebuilding the data. 75% of capacity can be used. 
 RAID 10 (RAID 0 + RAID 1) (aka ) .. : Array of min. 4 disks. combine stripping with mirriroing. 50% of capacity can be used.
+
+
+
+
+SPLUNK =============================================
+Forwarder
+  - universal forwarder (lightweight 100+)
+  - Heavy forwarder (ability to filter the raw data and then send to indexer)
+Indexer 
+  - Store and Index the raw data sent by forwarder
+Searh-Head
+  - ability to search the data with GUI
