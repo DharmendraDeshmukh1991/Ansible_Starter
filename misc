@@ -28,3 +28,18 @@ Indexer
   - Store and Index the raw data sent by forwarder
 Searh-Head
   - ability to search the data with GUI
+
+
+
+JENKINS ============================================
+jenkins jobs
+build jennkins job with parameter
+schedule jenkins job (build trigger)
+interact with GITHUB (github pluggin needs to install) 
+/var/lib/jenkins <--- jenkins related files 
+/var/lib/jenkins/workspace <--- all created jobs exists here
+Jenkins notify --> email notification
+run tasks/jobs on remote servers
+jenkins + ansible
+
+
