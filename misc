@@ -41,5 +41,10 @@ interact with GITHUB (github pluggin needs to install)
 Jenkins notify --> email notification
 run tasks/jobs on remote servers
 jenkins + ansible
-
+ENV variables in jenkins (Pre-defined --- example - BUILD_NUMBER, WORKSPACE etc.)
+  Can  be created as well.
+jenkins + MAVEN
+Jenkins project type
+  - free-style
+  - pipeline
 
