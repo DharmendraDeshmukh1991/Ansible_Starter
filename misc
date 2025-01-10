@@ -48,3 +48,25 @@ Jenkins project type
   - free-style
   - pipeline
 
+
+
+
+HARDWARE ============================================
+Top Enterprise-grade hardware/server vendors
+- Dell 
+    Populer server line : PowerEdge
+    management console (BMC) : iDRAC (Integrated Dell Remote Access Controller)
+- HPE
+    Populer server line : ProLiant
+    management console (BMC) : iLO (Integrated Lights-Out)
+- CISCO
+    Populer server line : UCS
+    management console (BMC) : CIMC (Cisco Integrated Management Controller)
+- IBM
+    Populer server line : Power-systems, zSystems
+    management console (BMC) : HMC (Hardware Management Console)
+- SUPERMICRO
+    Populer server line : SuperServer
+    management console (BMC) : IPMIview / IPMI (Intelligent Platform Management Interface)
+
+Other --- Lenovo, oracle, fujitsu
