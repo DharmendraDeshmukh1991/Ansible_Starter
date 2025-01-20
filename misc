@@ -70,3 +70,9 @@ Top Enterprise-grade hardware/server vendors
     management console (BMC) : IPMIview / IPMI (Intelligent Platform Management Interface)
 
 Other --- Lenovo, oracle, fujitsu
+
+
+
+
+/etc/nsswitch.conf =============
+The /etc/nsswitch.conf file configures the Name Service Switch (NSS), which determines how different types of system databases (like user accounts, hostnames, and group information) are resolved on a Linux system. It specifies the sources for resolving various types of information such as users, groups, hosts, and services.
