@@ -76,3 +76,10 @@ Other --- Lenovo, oracle, fujitsu
 
 /etc/nsswitch.conf =============
 The /etc/nsswitch.conf file configures the Name Service Switch (NSS), which determines how different types of system databases (like user accounts, hostnames, and group information) are resolved on a Linux system. It specifies the sources for resolving various types of information such as users, groups, hosts, and services.
+
+
+demsg =========== (Kernel Ring Buffer) 
+ - It keeps all the logs which appear on the boot screen during server boot-up.
+ - This buffer is like a ring, the messages keeps overiting in ring format, older messages will be overwritten by new logs.
+ - Kernel ring buffer have a fixed size to keep the information safe.
+ - to view, use "demsg" command or look for /var/log/demsg.log.
