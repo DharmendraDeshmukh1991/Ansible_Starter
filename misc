@@ -99,3 +99,17 @@ Connection Termination (Four-way handshake):
   Server → ACK → Client (FIN-WAIT-2)
   Server → FIN → Client (CLOSE-WAIT)
   Client → ACK → Server (TIME-WAIT)
+
+
+KAFKA =============================================
+SaaS based also exists (cloud). PUB-SUB
+Components :
+ - Producer (public data)
+ - Brokers ( topic0,1,2....n)
+ - Consumer (subscribe to one or more topic in kafa and get data)
+
+ - Topic (stream of related events)
+ - Partition (storage)
+
+ - ZooKeeper - Seperate tool- manages brokers - Its obsolete and replaced by KAFKA KIP.
+
