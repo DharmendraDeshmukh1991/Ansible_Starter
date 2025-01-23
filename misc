@@ -83,3 +83,19 @@ demsg =========== (Kernel Ring Buffer)
  - This buffer is like a ring, the messages keeps overiting in ring format, older messages will be overwritten by new logs.
  - Kernel ring buffer have a fixed size to keep the information safe.
  - to view, use "demsg" command or look for /var/log/demsg.log.
+
+
+
+
+TCP Connection Lifecycle (Three-Way Handshake + Termination) =====================
+
+Connection Establishment (Three-way handshake):
+  Client → SYN → Server (SYN-SENT state)
+  Server → SYN-ACK → Client (SYN-RECEIVED state)
+  Client → ACK → Server (ESTABLISHED state)
+
+Connection Termination (Four-way handshake):
+  Client → FIN → Server (FIN-WAIT-1)
+  Server → ACK → Client (FIN-WAIT-2)
+  Server → FIN → Client (CLOSE-WAIT)
+  Client → ACK → Server (TIME-WAIT)
