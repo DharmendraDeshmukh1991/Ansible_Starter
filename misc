@@ -113,3 +113,10 @@ Components :
 
  - ZooKeeper - Seperate tool- manages brokers - Its obsolete and replaced by KAFKA KIP.
 
+
+Producers: Send messages to Kafka topics.
+Brokers: Handle message storage and distribution within a Kafka cluster.
+Topics: Logical categories to which messages are published.
+Partitions: Topics are split into partitions for scalability.
+Consumers: Subscribe to topics and consume messages.
+Zookeeper (optional in newer versions): Manages cluster metadata and broker coordination.
