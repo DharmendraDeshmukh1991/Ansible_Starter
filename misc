@@ -120,3 +120,27 @@ Topics: Logical categories to which messages are published.
 Partitions: Topics are split into partitions for scalability.
 Consumers: Subscribe to topics and consume messages.
 Zookeeper (optional in newer versions): Manages cluster metadata and broker coordination.
+
+
+
+DNS ========================================
+bind package -- chroot-bind more secure
+service name -- named.service
+global config file -- /etc/named.conf <---------- This contans the details of zone files
+zone file/s -- /var/named/db.*  <-------- This file contains name to IP and IP to name mapping 
+
+DNS hirarachy 
+ - DNS root domain servers ( "." zone , example - www.google.com. (last ".")
+ - DNS TLDs (top level domain servers)
+ - authoritative domain servers
+
+DNS records 
+ - A record .......: Name to IP
+ - AAAA record ....: Name to IPv6
+ - PTR record .....: IP to name 
+ - NS record ......: name server
+ - MX record ......: mail exchange server record
+ - CNAME ..........: domain alias record
+
+
+nslookup (DNS resolver bundled in BIND) --> /etc/hosts --> /etc/resolve.conf ---> DNS server ---> Zone file ---> find record, returns the response
