@@ -144,3 +144,10 @@ DNS records
 
 
 nslookup (DNS resolver bundled in BIND) --> /etc/hosts --> /etc/resolve.conf ---> DNS server ---> Zone file ---> find record, returns the response
+
+
+
+
+REDIS ========================================
+Remote directory server - in-memory cache server (saves as combination of key and value)
+Its fast because it cache data on memory (RAM) and not on disk.
