@@ -151,3 +151,10 @@ nslookup (DNS resolver bundled in BIND) --> /etc/hosts --> /etc/resolve.conf ---
 REDIS ========================================
 Remote directory server - in-memory cache server (saves as combination of key and value)
 Its fast because it cache data on memory (RAM) and not on disk.
+
+
+
+DIG command ====================
+DNS lookup command basically.
+dig @<name-server> <domain/destination> : This command will fetch you the IP/name from that particuler name server (@)
+
