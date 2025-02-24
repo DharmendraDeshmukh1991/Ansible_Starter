@@ -158,3 +158,9 @@ DIG command ====================
 DNS lookup command basically.
 dig @<name-server> <domain/destination> : This command will fetch you the IP/name from that particuler name server (@)
 
+
+
+What is an "Ordering Cycle" Issue in RHEL? ==================
+
+	An ordering cycle in RHEL systemd occurs when two or more services have circular dependencies, causing systemd to get stuck in a loop while determining the service startup order.
+	Since systemd cannot resolve which service should start first, it breaks the cycle by removing one of the jobs, which may cause unexpected behavior (like a service failing to start).
