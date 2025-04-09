@@ -164,3 +164,20 @@ What is an "Ordering Cycle" Issue in RHEL? ==================
 
 	An ordering cycle in RHEL systemd occurs when two or more services have circular dependencies, causing systemd to get stuck in a loop while determining the service startup order.
 	Since systemd cannot resolve which service should start first, it breaks the cycle by removing one of the jobs, which may cause unexpected behavior (like a service failing to start).
+
+
+
+Disaster-Recovery (DR) =================
+ - Cold site DR : Barebones site with minimal infra, requires full setup during failover. (RTO - Days, RPO - high data loss)
+ - Warm site DR : Partially ready DR site; infra present but services may be dormant or not up-to-date.
+ - Hot site DR : Fully operational duplicate of the primary site with real-time data sync.
+
+What is RTO & RPO
+ - RTO : Recovery time objective
+ - RPO : Recovery point objective
+
+ Example Scenario:
+Let's say you're running a banking application:
+Hot Site: Another site is already processing real-time replicated transactions. If primary fails, DR takes over in minutes.
+Warm Site: Servers are up but services not actively running. Needs data sync and service startup during failover.
+Cold Site: Just physical space or cloud infra reserved. You must restore data and deploy apps from scratch.
