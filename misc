@@ -190,3 +190,13 @@ Storage Type ===================
  - File storage : NAS type storage - EFS
 
 
+Database =====================
+ oracle client -------- Listener (lsnrctl) -------> DB instance [Database node]
+ DB instance : ps -ef | grep pmon
+
+ tnsnames.ora --> defines database details
+ listener.ora --> defines listener details
+
+ standalone and RAC (real application cluster)
+
+
