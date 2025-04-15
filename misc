@@ -185,7 +185,7 @@ Cold Site: Just physical space or cloud infra reserved. You must restore data an
 
 
 Storage Type ===================
- - block storage (EBS) : lets you format the disk and data stored at block level.
+ - block storage (EBS) - DAS : lets you format the disk and data stored at block level.
  - object storage : S3
  - File storage : NAS type storage - EFS
 
