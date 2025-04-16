@@ -190,13 +190,32 @@ Storage Type ===================
  - File storage : NAS type storage - EFS
 
 
+
 Database =====================
- oracle client -------- Listener (lsnrctl) -------> DB instance [Database node]
- DB instance : ps -ef | grep pmon
+ oracle client (SQL Developer, DBeaver) --------> || Listener (lsnrctl) -------> DB instance [Database node] || <--- Oracle DB server
+ 
+DB instance ( Memory + Processes) : 
+	 - Memory (shared pool, java pool, stream pool, large pool, db buffer cache, redo log buffer)
+         - Process (ckpt-checkpointer, smon, pmon, DBWin-db-writer, LGWR-log-writer, RECO, ARCn-archiver)
+
+  ps -ef | grep pmon
 
  tnsnames.ora --> defines database details
  listener.ora --> defines listener details
 
  standalone and RAC (real application cluster)
 
+Shutdwon
+ su - oracle
+ . oraenv
+ sqlplus / as sysdba
+ shutdown immidiate;
+
+Startup
+ su - oracle
+ . oraenv
+ sqlplus / as sysdba
+ startup;
+
+Archivelog / noarchivelog mode 
 
