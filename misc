@@ -26,3 +26,21 @@ Startup
 
 Archivelog / noarchivelog mode 
 
+
+
+
+SAN =====================
+OS (server) ---- HBA in motherboard -----> SAN Fabric (cable, SAN switch) -------> Storage
+
+SAN technologies ---> Fibre Channel (more performance, need specialized HW)
+		 |
+		 ---> iSCSI (mostly used)
+		 |
+		 ---> FCoE (combination of firbre channel & iSCSI)
+		 |
+		 ---> InfiniBand (highest performance, disstance limit)
+				 				 
+SAN Terms 
+--------------
+ - Target (storage devices)
+ - Initiator (servers)
